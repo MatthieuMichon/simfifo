@@ -1,5 +1,7 @@
 # simfifo
 
+![blank](https://github.com/MatthieuMichon/simfifo/actions/workflows/blank.yml/badge.svg)
+
 This is a functional model of FIFO intended for VHDL simulations.
 
 # Usage
