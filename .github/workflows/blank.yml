@@ -28,7 +28,7 @@ jobs:
         with:
           backend: llvm
 
-      - name:Check GHDL
+      - name: Check GHDL
         run: ghdl -v
       
       - name: Execute testbench
