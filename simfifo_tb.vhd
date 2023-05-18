@@ -1,15 +1,14 @@
 /* VHDL 2008 */
 
 library ieee;
-use ieee.std_logic_1164.all;
+context ieee.ieee_std_context;
 package simfifo_pkg_c is new work.simfifo_pkg
     generic map (DATA_WIDTH => 8);
 
 library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use ieee.numeric_std_unsigned.all;
+context ieee.ieee_std_context;
 use work.simfifo_pkg_c.all;
+use ieee.numeric_std_unsigned.all;
 
 entity simfifo_tb is
     generic (FORCE_FAILURE: integer := 0);
