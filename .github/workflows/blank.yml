@@ -24,9 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: ghdl/setup-ghdl-ci@nightly
+      - uses: ghdl/setup-ghdl@v1
         with:
-          backend: llvm
+          version: nightly
+          backend: mcode
 
       - name: Check GHDL
         run: ghdl -v
