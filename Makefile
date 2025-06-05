@@ -9,7 +9,7 @@ all: $(MODULES)
 
 %: %.o
 	$(GHDL) elaborate $(GHDLFLAGS) $@
-	$(GHDL) run $@ -gFORCE_FAILURE=0
+	$(GHDL) run $(GHDLFLAGS) $@ -gFORCE_FAILURE=0
 
 %.o: %.vhd
 	$(GHDL) analyze $(GHDLFLAGS) $<
